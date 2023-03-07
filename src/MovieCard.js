@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import StarRatingComponent from "react-star-rating-component";
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({el}) => {
   return (
@@ -13,12 +14,13 @@ const MovieCard = ({el}) => {
    
     <Card sx={{ maxWidth: 200 , backgroundColor:"dimgrey"}}>
       <CardActionArea>
-        <CardMedia
+        <Link to={`/Description/${el.id}`}><CardMedia
           component="img"
-          height="250"
+          height="240"
           image= {el.img}
           alt="photo"
-        />
+        /></Link>
+ 
         <CardContent>
           <Typography gutterBottom variant="h6" component="div">
             {el.title}

@@ -2,7 +2,7 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #100F0F  /* !important */ ;
+  background-color: #1f232c  /* !important */ ;
  
 }
 
@@ -25,10 +25,22 @@
 }
 .add{
   display: grid;
-  gap: 5px;
+  gap: 4px;
 }
 .add input, .add button{
   width: 50%;
   height: 20px;
   margin: auto;
 }
+.desc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 40px;
+  margin-top: 50px;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: stretch;
+  line-height: 2em;
+  
+}
+
